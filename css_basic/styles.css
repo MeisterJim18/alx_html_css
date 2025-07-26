@@ -33,3 +33,13 @@ article, aside {
   padding: 1rem;
   border: 1px solid #ddd;
 }
+
+@media screen and (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+  
+  article, aside {
+    flex: 1 1 100%;
+  }
+}
