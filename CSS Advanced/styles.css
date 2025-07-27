@@ -7,7 +7,7 @@
 body {
   font-family: Arial, sans-serif;
   color: white;
-  background-color: #1f1f1f;
+  
 }
 
 nav {
@@ -15,11 +15,12 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
-  background-color: #1f1f1f;
+  
 }
 
 nav img {
-  height: 50px;
+  height:auto;
+  width: 50px;
 }
 
 nav ul {
@@ -36,7 +37,7 @@ nav ul li a {
 
 section {
   padding: 60px 40px;
-  background: url('https://images.unsplash.com/photo-1544005313-94ddf0286df2') center/cover no-repeat;
+  background: url("Object.png") center/cover no-repeat;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -87,7 +88,6 @@ section > div:nth-child(2) > div {
 
 section > div:nth-child(2) > div > div {
   width: 22%;
-  background-color: #2d2d2d;
   padding: 20px;
   border-radius: 10px;
 }
