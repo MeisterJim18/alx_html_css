@@ -171,3 +171,104 @@ section p {
   padding-left: -15px;
 }
 
+section {
+  background-color: white;
+}
+
+.tutorials {
+  padding: 40px;
+  background-color: #f5f5f5;
+}
+
+.tutorials h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 28px;
+  color: #333;
+}
+
+
+.tutorials {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+
+.tutorial-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+
+.image-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.image-wrapper img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 28px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  border-radius: 50%;
+}
+
+/* Titre du tutoriel */
+.tutorial-card h3 {
+  margin: 15px 0 10px;
+  font-size: 20px;
+  color: #333;
+}
+
+
+.tutorial-card p {
+  font-size: 14px;
+  color: #666;
+}
+
+
+.author {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.author img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.author h4 {
+  margin: 0;
+  font-size: 14px;
+  color: #c1398d;
+}
+
+/* Étoiles */
+.stars {
+  margin-top: 10px;
+  color: #c1398d; 
+}
+
+/* Durée */
+.duration {
+  font-size: 12px;
+  color: #999;
+  margin-top: 10px;
+}
