@@ -107,3 +107,67 @@ section p {
   font-size: 14px;
   color: #ccc;
 }
+
+.testimonial {
+  background-color: #fb12d8;
+  color: white;
+  padding: 30px;
+  margin: 40px auto;
+  max-width: 800px;
+  border-radius: 10px;
+  text-align: center;
+  font-family: sans-serif;
+  position: relative;
+  max-height: 600px;
+}
+
+.testimonial .content {
+  display: flex;
+  align-items: flex-end;
+  gap: 20px;
+  padding-left: 30px;
+}
+
+   .testimonial {
+  padding-left: 60px; 
+}
+
+.testimonial blockquote,
+.testimonial p {
+  margin-left: 0;
+  padding-left: 0;
+}
+.testimonial-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #972c3c;
+  margin: -60px auto 20px;
+  display: block;
+  background-color: #e91eca;
+  box-shadow: 0 3px 10px rgba(48, 2, 46, 0.921);
+  float: left;
+}
+
+.testimonial blockquote {
+  font-style: italic;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  padding-top: 10px;
+}
+
+.testimonial h3 {
+  margin: 0 0 0 30px;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.testimonial p {
+  margin-top: 5px;
+  font-size: 0.95rem;
+  color: #bbb;
+  padding-left: -15px;
+}
+
