@@ -107,7 +107,7 @@ section p {
   color: #ccc;
 }
 
-/*Task 2*/
+/*Task 3*/
 .personal {
   background-color: #e91eca;
   display: flex;
@@ -151,111 +151,280 @@ blockquote {
 }
 
 
-/*Task 3*/
+/*Task 4*/
 /* Styles de base */
-.tutorials-container {
-  padding: 40px;
-  background-color: #f5f5f5;
-}
+ .tutorials{
+  background-color: white;
+  margin:auto;
+  height: 500px;
+  width: 80%;
+  padding: 10px;
+ }
 
-.tutorials-text {
+ section h2{
   text-align: center;
-  margin: 0 0 30px;
-  font-size: 28px;
-  color: #110404;
-}
+  color: black;
+  font-size: 20px;
+  margin-top: 40px;
+ }
 
-.tutorials {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 30px;
+ .popular{
+  color:#e91eca;
+   font-size: 20px;
+ }
+
+ .tutorials-grid {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  padding-bottom: 15px;
 }
 
 .tutorial-card {
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-  text-align: center;
   display: flex;
   flex-direction: column;
-  height: 100%;
-}
-
-.image-wrapper {
   position: relative;
-  margin-bottom: 5px;
+  width: 100%;
+  flex: 1 1 100%; 
 }
 
-.image-wrapper img {
-  width: 180px;
-  height: 250px;
-  object-fit: cover;
-  border-radius: 10px;
+.img-container {
+  position: relative;
+  
 }
 
 .play-icon {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 180%;
   transform: translate(-50%, -50%);
-  font-size: 28px;
-  color: white;
-  background: rgba(0,0,0,0.6);
-  padding: 15px;
+  background: white;
+  color: #c1398d;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
-}
-
-.tutorial-card h3 {
-  margin: 15px 0 10px;
-  font-size: 20px;
-  color: #333;
-}
-
-.tutorial-card p {
-  font-size: 14px;
-  color: #666;
-  margin-bottom: 15px;
-}
-
-.author {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
-  margin: 15px 0;
 }
 
-.author img {
+
+.tutorial-img {
+  width: 2000%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: -25px;
+  margin-left: -15px;
+}
+
+.tutorial-card h3 {
+  font-size: 12px;
+  padding: 10px 0 0 5px;
+  margin: 0;
+  color: black;
+  text-align: left; 
+}
+
+.tutorial-card p {
+  font-size: 12px;
+  padding: 0 0 20px 5px;
+  color:#999;
+  margin: 0;
+  text-align: left; 
+}
+
+.author-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: -50px;
+  margin-left: -20px;
+  padding-left: 0;
+}
+
+
+.author-img {
   width: 30px;
   height: 30px;
   border-radius: 50%;
+  object-fit: cover;
 }
 
-.author h4 {
-  margin: 0;
-  font-size: 14px;
+.author-info h4 {
+  font-size: 12px;
   color: #c1398d;
+  margin: 0;
+  white-space: nowrap;
+}
+
+
+.rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+   margin-top: -80px;
+  color: #c1398d;
+  width: 500%;
 }
 
 .stars {
-  display: flex;
-  justify-content: center;
-  gap: 5px;
-  margin-top: auto;
-  padding: 15px 0;
   color: #c1398d;
+  display: flex;
+  gap: 5px;
+  margin-left: -20px;
+}
+
+.stars i:last-child{
+  color: #999;
 }
 
 .duration {
-  font-size: 12px;
-  color: #999;
-  margin-top: 10px;
+  color: #c1398d !important;
+  font-size: 12px !important;
+  white-space: nowrap !important;
+  display: flex !important; 
+  justify-content: flex-end !important; 
+  width: 900%; 
+  margin-right: -100px !important;
 }
+
+
+
 
 /* Media Query (optionnel mais recommandé) */
 @media (max-width: 768px) {
   .tutorials {
     grid-template-columns: 1fr;
   }
+}
+
+/*Task 5*/
+.membership {
+  padding: 5px 20px;
+  height: 400px;
+  background-color: rgba(11, 24, 45, 0.895);
+  text-align: center;
+}
+
+.title-5{
+  color: white;
+  font-size: 20px;
+}
+
+.Free{
+  color:#e91eca;
+   font-size: 20px;
+}
+
+.features{
+  display: flex;               
+  gap: 20px;                   
+  justify-content: center;     
+  flex-wrap: wrap;             
+}
+
+.smiley-grid img{
+  width: 30px;
+  height: 20px;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.smiley-grid{
+  display: flex;
+  flex-direction: column;      
+  align-items: center;      
+  max-width: 220px;
+}
+
+.smiley-grid h3{
+ font-size: 20px;
+ margin-top: -5px;
+}
+
+.smiley-grid p{
+  font-size: 10px;
+  margin-top: -10px;
+}
+
+.button{
+  margin-top: 60px;
+}
+
+/*Task 6*/
+.faq {
+  padding: 80px 20px;
+  background: #fff;
+  height: 1000px;
+}
+
+.faq-title {
+  margin: 0 0 48px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 300;
+  letter-spacing: .1em;
+  color: #000;
+}
+
+.faq-grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(260px, 1fr));
+  column-gap: 80px;
+  row-gap: 56px;
+  align-items: start;
+  justify-items: center;
+}
+
+.faq-item {
+  width: 100%;
+  max-width: 420px;
+  min-height: 180px;
+  padding: 8px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: left;
+}
+
+.faq-item h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
+}
+
+.faq-item p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.8;
+  color: #333;
+   text-align: justify;
+    width: 300px;              
+  white-space: normal;        
+  word-wrap: break-word;
+}
+
+
+.faq-grid  { outline: 1px dashed #6cf; }
+
+@media (max-width: 800px) {
+  .faq-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*Task 7*/
+.end{
+  background-color: #071629;
+  height: 300px;
+}
+
+.logo{
+  height: 100px;
+  width: 250px;
+  margin-right: 900px;
 }
