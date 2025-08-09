@@ -409,8 +409,6 @@ blockquote {
 }
 
 
-.faq-grid  { outline: 1px dashed #6cf; }
-
 @media (max-width: 800px) {
   .faq-grid {
     grid-template-columns: 1fr;
@@ -418,13 +416,37 @@ blockquote {
 }
 
 /*Task 7*/
-.end{
+.footer{
   background-color: #071629;
   height: 300px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;   
+  justify-content: space-between;
 }
 
-.logo{
-  height: 100px;
-  width: 250px;
-  margin-right: 900px;
+.footer-top{
+display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.footer-logo{
+  height: 70px;
+  width: 240px;
+  margin-left: 150px;
+}
+
+.footer-socials{
+  font-size: 30px;
+  margin-right: 150px;
+  cursor: pointer;
+}
+
+.footer-bottom{
+  text-align: center;
+  font-size: 24px;
+  opacity: 0.2;
+  margin-bottom: 0;
 }
